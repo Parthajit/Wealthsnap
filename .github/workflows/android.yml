@@ -29,6 +29,14 @@ jobs:
         node-version: '22'
         cache: 'npm'
 
+    - name: Set up Gradle
+      uses: gradle/actions/setup-gradle@v4
+
+    - name: Regenerate Gradle Wrapper
+      run: |
+        cd android
+        gradle wrapper --gradle-version 8.14.3
+
     - name: Install NPM Dependencies
       run: npm ci
 
