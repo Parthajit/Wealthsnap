@@ -1,0 +1,10 @@
+{
+  "name": "WealthSnap",
+  "description": "A private personal finance tracker with insights and account management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "personal_finance_tracking",
+    "insights_generation",
+    "local_data_storage"
+  ]
+}
